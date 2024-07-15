@@ -39,3 +39,12 @@ class Coach:
     def celebrate_goal(self, args):
         if isinstance(args, GoalScoredInfo) and args.goals_scored < 3:
             print('Coach says well done')
+
+
+if __name__ == '__main__':
+    game = Game()
+    coach = Coach(game)
+    player = Player('Messi', game)
+    player.score()
+    player.score()
+    player.score()
